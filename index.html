@@ -20,21 +20,24 @@
                     </div>
                     <br>
                     <h1 style="font-style: oblique;">Em Bradley-DeHaan</h1>         
-                    <p>Undergraduate Student at Iowa State University</p>
+                    <p>Frontend developer for Websites and Web apps. Undergraduate Student studying Software Engineering at Iowa State University</p>
                     <a style="color: #520a90;" href="./assets/Bradley-DeHaan_Em_Resume.pdf" target="blank">My Resume</a> <br> <br>
-                    <p>Frontend developer for Websites and Web apps. 
-                        
-                        Throughout my time at Iowa State, I have been heavily involved in Frontend design and Software development.
-                        I helped develop software in Python for CYSAT-2&mdash;a cube satellite&mdash;that was deployed in October 2024, 
-                        coded Pok&eacute;mon in C/C++ by providing ASCII visual representations in a terminal, and developed mobile and web apps
-                        for various class projects. I'm currently working with a team of Software Engineers to develop an application
-                        for Reiman Gardens' Spirit of the Gardens Event that will launch in October 2025.
-                        <br><br>
-                        I've worked as a Computer Support Technician for the Music & Theater Department at Iowa State since August 2023,
-                        and later joined as a Recording Engineer in January 2024.
+                    <h2 style="font-size: 40px;">About Me</h2>
+                    <p> Throughout my time at Iowa State, I have been heavily involved in Frontend design and Software development. I've helped family with developing
+                        websites and getting set up with enterprise software for their quilt shop in Iowa Falls, worked Frontend for multiple class projects, and
+                        done website design in my freetime.
+                        <br> <br>
+                        I have a deep passion for music and serving my community; I have participated in the Iowa State Marching Band and Basketball Pep Bands since 2020, 
+                        with 2022 being my first year on the leadership team. I was also initiated into Tau Beta Sigma, a National Honorary Band Sorority dedicated to 
+                        community service and empowering women in music, in 2020 and have served as the Chapter president since 2023.
                     </p>
-        
-                    <h2>Technical Skills</h2>
+                </div>
+            </section>
+
+            <section id="skills">
+                <div class="container">
+                    <h2 style="font-size: 40px;">Skills</h2>
+                    <h4>Technical Skills</h4>
                     <ul>
                         <li>Microsoft OS, MacOS, iOS</li>
                         <li>Microsoft Office Suite</li>
@@ -45,9 +48,10 @@
                         <li>Android Studio, Visual Studio Code</li>
                         <li>Technical Communication</li>
                         <li>Ticketing Queue Systems</li>
+                        <li>Parallels Desktop</li>
                     </ul>
         
-                    <h2>Soft Skills</h2>
+                    <h4>Soft Skills</h4>
                     <ul>
                         <li>Highly adaptive and flexible</li>
                         <li>Effective communication</li>
@@ -63,18 +67,17 @@
                     <div class="project">
                         <h3>Pumpkin Tracker</h3>
                         <div style="text-align: center;">
-                            <img src="./assets/pumpkin_tracker.png" width="700px;"/>
+                            <img src="./assets/pumpkin_tracker.png" width="70%;"/>
+                            <p style="font-style: italic; text-align: center;">Initial design of the Pumpkin Tracker app</p>
                         </div>
-                        <br>
                         <p> Every year, Reiman Gardens hosts a Spirit of the Gardens event in October, where 1200+ pumpkins are carved and displayed 
                             for each week of the event. Volunteers are requested to help cut out stencils, trace stencils onto pumpkins, and carve them.                            
                             All pumpkin statuses are stored in a single excel sheet, where Admins must manually adjust the statuses of each stencil&mdash;whether
                             they've been printed, cut out, traced, carved, and put out for display. Additionally, volunteers for Spirits of the Gardens
                             will help select stencils to be used for each week of the event, which takes an additional step of marking down which week(s)
-                            a stencil is available for. As the stencil database keeps growing, this process is becoming egregiously time-consuming.
-                            <br>
-                            <br>
-                            To aid with this issue, I'm currently working with Nathan Brockman&mdash;one of the faculty at Reiman Gardens&mdash;on a team of
+                            a stencil is available for. As the stencil database keeps growing, this process is becoming increasingly time-consuming.
+                            <br> <br>
+                            To aid with this issue, I'm currently working with Nathan Brockman&mdash;one of the faculty members at Reiman Gardens&mdash;on a team of
                             Software Engineers to develop a app called Pumpkin Tracker to make tracking information quickly and accurately. Pumpkin Tracker 
                             plans to facilitate interactions with the stencil database by allowing Event Admins to easily add, delete, update, and archive 
                             stencils with the simple click of a few buttons as opposed to manually editing a row in an excel sheet that contains 1600+ entries. 
@@ -83,47 +86,81 @@
                             barcodes of any stencils that were returned and further expedite the process. A Volunteer app is also being developed, which both provides
                             engagement for those volunteering to help cut and trace stencils as well as eventually provide time estimates for how much work
                             each stencil will take and updates to stencil statuses that will then be confirmed by an Admin.
-                            <br>
-                            <br>
+                            <br> <br>
                             I am primarily working on Frontend for the development of the Mobile and Web Application, which is being set up as a 
                             React app. This involves working extensively with ReactDOM, JavaScript, and HTML/CSS. Our database is running on SQLite
-                            and is planned to be hosted on a DigitalOcean Droplet in August.
+                            and is planned to be hosted on a DigitalOcean Droplet in August. Our team adopted an Agile project development style as we
+                            are presenting each design iteration to our client, Nathan Brockman, to ensure the Pumpkin Tracker app is satisfying
+                            user needs and for continuous software testing.
                         </p>
                     </div>
                     <div class="project">
-                        <h3>Pok&eacute;mon in C/C++</h3>
+                        <h3>Pok&eacute;mon in C/C++ | <a href="https://github.com/em-bd/pokemon_C_CPP" target="blank">Source Code</a> </h3>
                         <div style="text-align: center;">
-                            <img src="./assets/Pokemon_C_CPP_1.png" alt="Terminal display for Pokemon with ASCII" width="350vh">
-                            <img src="./assets/Pokemon_C_CPP_2.png" alt="Terminal display for a Pokemon battle with ASCII" width="363vh"/>
+                            <img src="./assets/Pokemon_C_CPP_1.png" alt="Terminal display for Pokemon with ASCII" width="45%">
+                            <img src="./assets/Pokemon_C_CPP_2.png" alt="Terminal display for a Pokemon battle with ASCII" width="46%"/>
                         </div>
-                        <br>
+                        <p style="font-style: italic; text-align: center;">Terminal displays for map and battle sequence</p>
                         <p> This class project was dedicated to understanding memory management and other advanced coding techniques in C/C++ while
                             creating a roguelite version of Pok&eacute;mon. Functionalities like a dynamic GUI, NPC AI, map 
-                            generation, CSV parsing, and battle mechanics were required as a baseline for developing a roguelite with the 
+                            generation, map traversal, and battle mechanics were required as a baseline for developing a roguelite with the 
                             freedom to add additional features. As an avid Pok&eacute;mon fan since Gen 4, I programmed this with attempts to
                             remain faithful to the mechanics in the original Pok&eacute;mon games.
-                            <br>
-                            <br>
+                            <br> <br>
                             
+                            <br> <br>
+                            I coded this entire project in C until the latter half of the course, which then was converted into C++ with the ability to 
+                            implement classes and vectors. A Makefile was implemented to generate necessary object files to execute the program.
                         </p>
                     </div>
                     <div class="project">
                         <h3>CyHealth</h3>
                         <!-- Images of the Frontend (Schedule view and Patient Directory) -->
                          <br>
-                         <p> CyHealth is a patient database app that was developed with a priority on patient confidentiality and data management.
+                         <p> Patient data confidentiality and management has high priority in all healthcare service environments. With the growth of
+                             technology and increasing risks in cyber security, confidentiality has become a large area of concern. Healthcare providers
+                             also desire software solutions for managing and booking appointments, reading and writing to patient data, and providing their
+                             availability to their patients.
+                             <br> <br>
+                             I worked with a group of other students to design a Mobile app we named CyHealth to resolve this issue. I was one of 2 members
+                             delegated to the Frontend, where we developed views for Patients, Receptionists, Doctors/Nurses, and Admins. We evaluated user profiles
+                             and the privileges they needed, which boiled down to: Doctors/Nurses having access to all patient data (diagnoses, prescriptions, etc.), 
+                             their own availability and scheduled appointments with patients, and any appointment requests; Receptionists having access to Patient 
+                             appointment requests and bookings as well as availabilities of all Doctors/Nurses; Patients having access to their personal data, appointment
+                             requests and bookings, and test results; and Admins having access to privileges of workers (Doctors/Nurses and Receptionists).
+                             <br> <br>
+                             We developed XML files and Java script files in Android Studio for the Frontend and Maven Projects with IntelliJ for the Backend. To
+                             enable client-server communication, we utilized REST API through HTTP requests and established Websockets throughout the app, which 
+                             Websockets were set in places where it was appropriate to receive real-time updates (i.e., Patient appointment request notifications
+                             sent to Receptionist views).
                          </p>
                     </div>
+                </div>
+            </section>
+
+            <section id="work">
+                <div class="container">
+                    <h2 style="font-size: 40px;">Work Experience</h2>
+                    <p> I've been working as a Computer Support Specialist for the Iowa State Music & Theater Department since August 2023. As a Computer Support 
+                        Technician, I've handled ticketing queue systems, customer service, software troubleshooting, new machine deployment, MacOS, iOS, Windows 10/11, 
+                        system updates, user technology training, network registration, and hardware installation. Working with a team of other technicians, I've ensured 
+                        efficient and accurate communication, ticket status updates, and training of newer technicians.
+                        <br> <br>
+                        I have worked in the Recording Studio as an Engineer since January 2024, where I've had the opportunity to gain hands-on experience with live mixing
+                        concerts and recitals in Pro Tools Studio, troubleshooting Audo/Visual technologies, video recording with an ATEM device, webcasting through
+                        Livestream Studio, and editing audio files during post-production. As a Recording Engineer, I also ensure quality control over audio and video
+                        recordings.
+                    </p>
                 </div>
             </section>
 
             <section id="contact">
                 <div class="container">
                     <h2 style="font-size: 40px;">Contact Information</h2>
-                    <div class="row content-container" style="padding-top: 45px; padding-left: 115px;">
-                        <div class="col">
+                    <div class="row content-container" style="padding-top: 45px;">
+                        <div class="col" style="padding-left: 20%;">
                             <p style="color: #f6dcac;"><img src="./assets/phone.png"> (937)286-7778</p>
-                            <p><img src="./assets/email.png"/> <a style="text-decoration: none; color: #f6dcac;" href="mailto:emmiesueb@gmail.com">emmiesueb@gmail.com</a></p>
+                            <a style="text-decoration: none; color: #f6dcac;" href="mailto:emmiesueb@gmail.com"><img src="./assets/email.png"/> emmiesueb@gmail.com</a>
                         </div>
                         <div class="col">
                             <a style="text-decoration: none; color: #f6dcac;" href="https://www.linkedin.com/in/emily-bradley-dehaan-b84694208/" target="blank"><img src="./assets/LI-In-Bug.png" style="width: 40px;"/> Em Bradley-DeHaan</a> <br><br>
@@ -135,9 +172,11 @@
         </div>
 
         <div class="col">
-            <div class="retro-box" style="text-align: left; display: block; width: 125px; position: sticky; top: 50%; overflow: hidden;" >
+            <div class="retro-box" style="text-align: left; display: block; width: 50%; position: sticky; top: 50%; overflow: hidden;" >
                 <a style="text-decoration: none; color: #520a90; margin: 10px;" href="#about">About Me</a><br>
-                <a style="margin: 10px; text-decoration: none; color: #520a90;" href="#projects">Projects</a>
+                <a style="margin: 10px; text-decoration: none; color: #520a90;" href="#skills">Skills</a><br>
+                <a style="margin: 10px; text-decoration: none; color: #520a90;" href="#projects">Projects</a><br>
+                <a style="margin: 10px; text-decoration: none; color: #520a90;" href="#work">Work</a><br>
                 <a style="margin: 10px; text-decoration: none; color: #520a90;" href="#contact">Contact</a>
             </div>
         </div>

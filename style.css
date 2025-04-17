@@ -37,7 +37,7 @@ li::marker {
 }
 
 .container  {
-    max-width: 900px;
+    max-width: 90%;
     padding: 40px;
     background-color: #f6dcac;
 }
@@ -59,6 +59,15 @@ h3 {
     font-family: 'Lucida Console', monospace;
     font-style: oblique;
     color: #bb5900;
+}
+
+h3 a {
+    text-decoration: none;
+    color: #bb5900;
+}
+
+h4 {
+    font-weight: bold;
 }
 
 .retro-box {
