@@ -1,32 +1,75 @@
-header  {
-    background-color: #333;
-    color: #FFF;
-    padding: 10px 0;
+body {
+    font-family: 'Lucida Console', monospace;
+    background-image: url(./assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment:fixed;
 }
-nav ul  {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+
+nav {
+    text-align: center;
 }
-nav li  {
-    margin: 0 20px;
-}
+
 nav a   {
     text-decoration: none;
-    color: #FFF;
+    color: #520a90;
+    font-family: 'Lucida Console', monospace;
 }
-body    {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
 img {
     max-width: 100%;
 }
+
 footer  {
     text-align: center;
-    margin: 5px;
+    margin: 15px;
     padding: 10px;
-    background-color: #333;
+    background-color: #520a90;
     color: #FFF;
+}
+
+li {
+    list-style-type: square;
+}
+
+li::marker {
+    color:#bb5900;
+}
+
+.container  {
+    max-width: 900px;
+    padding: 40px;
+    background-color: #f6dcac;
+}
+
+.project    {
+    margin-bottom: 20px;
+    border: 3px solid #520a90;
+    padding: 20px;
+}
+
+h2 {
+    font-weight: bold;
+    color: #520a90;
+    text-shadow: -2px 2px 0 #ff7900,
+                 -4px 4px 0 #ffc000;
+}
+
+h3 {
+    font-family: 'Lucida Console', monospace;
+    font-style: oblique;
+    color: #bb5900;
+}
+
+.retro-box {
+    border: 3px solid #520a90; 
+    background-color: #f6dcac; 
+    padding: 10px;
+    box-shadow: -3px 3px 0 #ff7900,
+                -6px 6px 0 #ffc000;
+}
+
+.content-container {
+    background-color: #ff7900;
+    padding: 30px 0px;
 }
