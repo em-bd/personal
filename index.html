@@ -89,33 +89,47 @@
                             <br> <br>
                             I am primarily working on Frontend for the development of the Mobile and Web Application, which is being set up as a 
                             React app. This involves working extensively with ReactDOM, JavaScript, and HTML/CSS. Our database is running on SQLite
-                            and is planned to be hosted on a DigitalOcean Droplet in August. Our team adopted an Agile project development style as we
-                            are presenting each design iteration to our client, Nathan Brockman, to ensure the Pumpkin Tracker app is satisfying
-                            user needs and for continuous software testing.
+                            and is planned to be hosted on a DigitalOcean Droplet in August. Our team adopted an Agile project development style since we
+                            need to present each design iteration to our client, Nathan Brockman, to receive feedback on user satisfaction and conduct continuous
+                            software testing as we integrate new features.
                         </p>
                     </div>
                     <div class="project">
                         <h3>Pok&eacute;mon in C/C++ | <a href="https://github.com/em-bd/pokemon_C_CPP" target="blank">Source Code</a> </h3>
                         <div style="text-align: center;">
                             <img src="./assets/Pokemon_C_CPP_1.png" alt="Terminal display for Pokemon with ASCII" width="45%">
-                            <img src="./assets/Pokemon_C_CPP_2.png" alt="Terminal display for a Pokemon battle with ASCII" width="46%"/>
+                            <img src="./assets/Pokemon_C_CPP_2.png" alt="Terminal display for a Pokemon battle with ASCII" width="47%"/>
                         </div>
                         <p style="font-style: italic; text-align: center;">Terminal displays for map and battle sequence</p>
-                        <p> This class project was dedicated to understanding memory management and other advanced coding techniques in C/C++ while
-                            creating a roguelite version of Pok&eacute;mon. Functionalities like a dynamic GUI, NPC AI, map 
+                        <p> This class project is dedicated to understanding memory management and other advanced coding techniques in C/C++ while
+                            creating a roguelite version of Pok&eacute;mon. Functionalities like dynamic GUI, NPC AI, map 
                             generation, map traversal, and battle mechanics were required as a baseline for developing a roguelite with the 
                             freedom to add additional features. As an avid Pok&eacute;mon fan since Gen 4, I programmed this with attempts to
-                            remain faithful to the mechanics in the original Pok&eacute;mon games.
+                            remain faithful to the mechanics of the original Pok&eacute;mon games.
                             <br> <br>
-                            
+                            Dynamic memory management was vital to this project, especially considering the full map grid would be comprised of a total of 400
+                            randomly generated maps and at least 7 randomly generated NPCs per map, each having 3 random pok&eacute;mon in their party. Maps would
+                            only be generated upon the PC encountering them, which they would be stored in a world data grid for potential use later use or get free'd 
+                            once the program is terminated. Instead of printing out each map to the terminal, the ncurses library in C/C++ was included to provide a
+                            dynamically changing GUI for the player. 
                             <br> <br>
-                            I coded this entire project in C until the latter half of the course, which then was converted into C++ with the ability to 
-                            implement classes and vectors. A Makefile was implemented to generate necessary object files to execute the program.
+                            The game is set on a turn loop, with the PC having the highest priority; all NPCs are waiting
+                            for the PC to complete their turn before taking theirs. NPC's turn decisions are dependent on their behavior (friendly, neutral, or 
+                            aggressive) toward the PC and, if aggressive, will determine their next move based on the move costs calculated by an implementation of
+                            dijkstra's algorithm for pathfinding to the PC. If the PC gets ensnared into a wild or trainer battle, the battle UI window will be
+                            displayed, allowing the PC to either use an item, fight with the current pok&eacute;mon's moves, switch out with one of their 
+                            party pok&eacute;mon, or run (if it's a wild battle). Data for items, pok&eacute;mon species, movesets, moves, types, statuses, etc. had to be 
+                            parsed from CSV files provided in a database accessible in the Pyrite server, which get loaded up at runtime prior to  generating the 
+                            first map of the game.
+                            <br> <br>
+                            By using these techniques and combining these features, I created a functional roguelite version of Pok&eacute;mon playable in an 80x24 terminal.
+                            Additional functionalities that weren't required but I still implemented include type matchups, solo and party leveling, shiny chances, and 
+                            the Pok&eacute;mon Storage System.
                         </p>
                     </div>
                     <div class="project">
                         <h3>CyHealth</h3>
-                        <!-- Images of the Frontend (Schedule view and Patient Directory) -->
+                        <!-- Eventualy grab Images of the Frontend (Schedule view and Patient Directory) -->
                          <br>
                          <p> Patient data confidentiality and management has high priority in all healthcare service environments. With the growth of
                              technology and increasing risks in cyber security, confidentiality has become a large area of concern. Healthcare providers
